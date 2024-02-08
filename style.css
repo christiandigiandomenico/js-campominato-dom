@@ -84,3 +84,14 @@ body {
 .bomb.hidden {
     background-image: none;
 }
+
+.message {
+    font-size: 40px;
+}
+
+#safe-cells {
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+    font-size: 50px;
+}
