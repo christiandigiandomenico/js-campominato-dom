@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    min-width: 1000px;
+
+    background-color: white;
+
+}
+
+body {
+    --s: 150px;
+    /* control the size */
+
+    --_g: #0000 90deg, #046D8B 0;
+    background:
+        conic-gradient(from 116.56deg at calc(100%/3) 0, var(--_g)),
+        conic-gradient(from -63.44deg at calc(200%/3) 100%, var(--_g)) #2FB8AC;
+    background-size: var(--s) var(--s);
+
+
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#grid {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+
+    color: black;
+    background-color: white;
+    opacity: 0.8;
+
+    user-select: none;
+}
+
+.square_81 {
+    width: 111px;
+    height: 111px;
+}
+
+
+.square_49 {
+    width: 142px;
+    height: 142px;
+}
+
+.square.active {
+    background-color: #1e8eb8;
+    font-weight: bold;
+}
+
+.hidden {
+    color: transparent;
+}
+
+.bomb {
+    background-image: url(./img/bomb.png);
+    background-size: cover;
+}
+
+.bomb.hidden {
+    background-image: none;
+}
